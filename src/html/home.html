@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Better School</title>
+		<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<a href="#" class="top"><span></span></a>
+			@@include('blocks/header.html')
+
+			<main class="main">
+				<div class="container">
+					<div class="main__about">
+						<div class="sayHi">
+							<h1 class="title">Хуш омади</h1>
+							<p class="text">
+								Дар ин чо ман барои ту вазифахо таёр кардам, ба ту маъкул хохад
+								шуд, хатман барои сомона бахо гузор ман хеле хушхол мешавам
+							</p>
+							<a href="#subject" class="start">огоз</a>
+						</div>
+						<div class="img">
+							<img src="img/happy.png" alt="" />
+						</div>
+					</div>
+
+					<div id="subject" class="main__subject swiper">
+						<h2 class="title">Фанхо</h2>
+						<div class="swiper-wrapper">
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/biology.jpg" alt="" />
+								</div>
+								<div class="sub-title">Биология</div>
+								<a data-lesson="biology" class="start" href="lesson.html"
+									>гузаштан</a
+								>
+							</div>
+
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/english.jpg" alt="" />
+								</div>
+								<div class="sub-title">З. англиси</div>
+								<a data-lesson="english" class="start" href="lesson.html"
+									>гузаштан</a
+								>
+							</div>
+
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/information.jpg" alt="" />
+								</div>
+								<div class="sub-title">Т. иттилооти</div>
+								<a data-lesson="information" class="start" href="lesson.html"
+									>гузаштан</a
+								>
+							</div>
+
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/geography.jpg" alt="" />
+								</div>
+								<div class="sub-title">География</div>
+								<a data-lesson="geography" class="start" href="lesson.html"
+									>гузаштан</a
+								>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+
+					<div class="main__info">
+						<h2 class="title">Шумо аз ин сомона ба худ чи мегиред</h2>
+						<div class="main__items">
+							<div class="main__item _anim-item">
+								<h3 class="sub-title">Видео</h3>
+								<p class="text">
+									Мо хама мутафовит хастем ва ин хуб аст! Баъзехо аз
+									видео-наворхо хубтар мавзуро дарк мекунанд ва баъзехо аз
+									хондани китобхо, дар сомона барои хама холатхо чорахо пешбини
+									шудаанд.
+								</p>
+							</div>
+
+							<div class="main__item">
+								<h3
+									data-title="ба вазифа гузар то мавзуро хубтар дарк куни"
+									class="sub-title info"
+								>
+									Вазифа
+								</h3>
+								<p class="text">
+									Барои оне, ки дарс хеле бехтар гузарад дар сомона вазифа
+									мавчуд аст ба вазифа пахш кун то вазифаро ичро куни
+								</p>
+							</div>
+							<div class="main__item">
+								<h3 class="sub-title">...</h3>
+								<p class="text">
+									Ба гайр аз дарс ва вазифаи хонаги ман ба ссилкахо ба
+									платформахои гуногун равона шудаанд то, ки мавзуро хубтар дарк
+									шавад
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="main__univer swiper">
+						<h1 class="main__title title"
+							>Маълумот оиди дохилшави ба донишгоҳо</h1
+						>
+
+						<div class="swiper-wrapper">
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/technolog-univer.jpg" alt="" />
+								</div>
+								<div class="sub-title">Донишгоҳи технологии Тоҷикистон</div>
+								<a href="#" class="main__location">Душанбе</a>
+								<a target="_blank" href="https://tut.tj/" class="main__page"
+									>сомонаи ассоси</a
+								>
+								<a
+									data-univer="technolog-univer"
+									class="start"
+									href="univer.html"
+									>Маълумот</a
+								>
+							</div>
+
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/technolog-dushanbe.jpg" alt="" />
+								</div>
+								<div class="sub-title"
+									>Донишгоҳи техникии Тоҷикистон ба номи М.С Осимӣ</div
+								>
+								<a href="#" class="main__location">Душанбе</a>
+								<a target="_blank" href="https://web.ttu.tj/" class="main__page"
+									>сомонаи ассоси</a
+								>
+								<a
+									data-univer="technolog-dushanbe"
+									class="start"
+									href="univer.html"
+									>Маълумот</a
+								>
+							</div>
+
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/khujand.jpg" alt="" />
+								</div>
+								<div class="sub-title">Донишгоҳи давлатии Хуҷанд</div>
+								<a href="#" class="main__location">Хуҷанд</a>
+								<a target="_blank" href="https://www.hgu.tj/" class="main__page"
+									>сомонаи ассоси</a
+								>
+								<a data-univer="khujand" class="start" href="univer.html"
+									>Маълумот</a
+								>
+							</div>
+
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/khorog.jpg" alt="" />
+								</div>
+								<div class="sub-title">Донишгоҳи давлатии Хоруғ</div>
+								<a href="#" class="main__location">Хоруғ</a>
+								<a
+									target="_blank"
+									href="https://www.khogu.tj/"
+									class="main__page"
+									>сомонаи ассоси</a
+								>
+								<a data-univer="khorog" class="start" href="univer.html"
+									>Маълумот</a
+								>
+							</div>
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/oxf.jpg" alt="" />
+								</div>
+								<div class="sub-title">Oxford</div>
+								<a href="#" class="main__location">Англия</a>
+								<a
+									target="_blank"
+									href="https://www.ox.ac.uk/admissions/undergraduate/student-life"
+									class="main__page"
+									>сомонаи ассоси</a
+								>
+								<a data-univer="oxford" class="start" href="univer.html"
+									>Маълумот</a
+								>
+							</div>
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/cambridge.jpg" alt="" />
+								</div>
+								<div class="sub-title">Cambridge</div>
+								<a href="#" class="main__location">Англия</a>
+								<a
+									target="_blank"
+									href="https://www.undergraduate.study.cam.ac.uk/student-life"
+									class="main__page"
+									>сомонаи ассоси</a
+								>
+								<a data-univer="cambridge" class="start" href="univer.html"
+									>Маълумот</a
+								>
+							</div>
+							<div class="main__item swiper-slide border">
+								<div class="main__img">
+									<img src="img/harvard.jpg" alt="" />
+								</div>
+								<div class="sub-title">Harvard</div>
+								<a href="#" class="main__location">И.М.А</a>
+								<a
+									target="_blank"
+									href="https://college.harvard.edu/student-life"
+									class="main__page"
+									>сомонаи ассоси</a
+								>
+								<a data-univer="harvard" class="start" href="univer.html"
+									>Маълумот</a
+								>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</main>
+
+			@@include('blocks/footer.html')
+		</div>
+
+		<script src="libs/swiper/swiper-bundle.min.js"></script>
+		<script src="./js/app.bundle.js"></script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+//! color
+
+$red: #d52027;
+$bg: #141024;
+$white: #fff;
+$black: #000;
+$grey: rgba(20, 16, 36, 0.11);
+$opacity-black: rgba(255, 255, 255, 0.08);
+
+//! fonts
+$fz: 18px;
+$lh: 130%;
+$ff: 'Jost';
+
+$title: 36px;
+$sub-title: 24px;
+$text: 18px;
+
+$main-p: 120px 0 50px;
+
+%title {
+	font-size: $title;
+	font-weight: 600;
+	margin-bottom: 30px;
+	text-align: center;
+	line-height: $lh;
+}
+
+//! @extend %title;
+
+%sub-title {
+	font-size: $sub-title;
+	font-weight: 600;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: $lh;
+}
+
+$js-cont: space-around;

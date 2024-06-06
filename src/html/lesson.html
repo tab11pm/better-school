@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Better School</title>
+		<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			@@include('blocks/header.html')
+
+			<main class="main">
+				<div class="container">
+					<div class="main__lesson">
+						<div class="main__accordeon">
+							<div class="accordeon__items"> </div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<div class="form__modal">
+				<div class="form__error">Заполните поля</div>
+				<div class="close">
+					<span data-formclose></span>
+				</div>
+			</div>
+
+			@@include('blocks/footer.html')
+		</div>
+		<script src="libs/swiper/swiper-bundle.min.js"></script>
+		<script src="js/lesson.bundle.js"></script>
+	</body>
+</html>

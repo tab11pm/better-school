@@ -1,0 +1,25 @@
+.footer {
+	background: $bg;
+	position: relative;
+}
+
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.footer__logo {
+	color: $white;
+}
+
+.copy {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__phone {
+	color: $white;
+	padding: 30px 15px;
+}

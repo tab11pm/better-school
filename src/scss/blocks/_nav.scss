@@ -1,0 +1,22 @@
+.nav {
+	& a._active {
+		border-bottom: 2px solid #c0c0c0;
+	}
+}
+
+.nav__list {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.nav__link {
+	display: block;
+
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+
+	transition: all 0.3s ease;
+}

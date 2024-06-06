@@ -1,0 +1,26 @@
+<footer class="footer">
+	<div class="footer__container _cont">
+		<div class="left">
+			<div class="copy">&copy better scholl</div>
+		</div>
+		<div class="footer__phone">
+			платформаи онлайн барои барои омузиш ва сайқал додани маҳоратҳои худ
+		</div>
+		<!-- <a href="+992934530406" class="footer__phone phone">+992 93 453 04 06</a> -->
+	</div>
+</footer>
+
+<script>
+	const getLocation = window.location.pathname;
+	const getType = getLocation.indexOf('.html');
+	const toArr = getLocation.split('');
+	toArr.shift();
+	const res = [];
+
+	for (let i = 0; i < getType - 1; i++) {
+		res.push(toArr[i]);
+	}
+
+	const word = res.join('');
+	document.getElementById(word).classList.add('_active');
+</script>

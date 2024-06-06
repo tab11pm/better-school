@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Better School</title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			@@include('blocks/header.html')
+
+			<main class="main">
+				<div class="container">
+					<div class="form">
+						<form action="#" class="form__body" id="">
+							<div class="form__title">Ба сомона бахо гузор</div>
+							<div class="form__item">
+								<label class="form__label" for="formName">Ном*:</label>
+								<input
+									class="form__input _req"
+									type="text"
+									name="name"
+									id="formName"
+								/>
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="formEmail">E-mail*:</label>
+								<input
+									class="form__input _req _email"
+									type="email"
+									name="email"
+									id="formEmail"
+								/>
+							</div>
+
+							<div class="form__item">
+								<textarea
+									placeholder="Фикрхо ва пешниходхои худро навис"
+									class="form__input"
+								></textarea>
+							</div>
+							<h3 class="form__sub-title">Чи бештар ба ту маъкул шуд</h3>
+							<div class="form__item">
+								<select name="age" class="select">
+									<option disabled>Видео-наворҳо</option>
+									<option value="video">Видео-наворҳо</option>
+									<option value="lesson">Дасҳо</option>
+									<option value="home_work">Вазифаи хонаги</option>
+								</select>
+							</div>
+							<h3 class="form__sub-title">
+								Сомонаро ба чанд ситора бахогузори мекунед
+							</h3>
+							<div class="form__row">
+								<div class="form__item">
+									<input
+										class="form__radio"
+										type="radio"
+										name="star"
+										id="formOneStar"
+									/>
+									<label
+										data-id="1"
+										class="check__label _active"
+										for="formOneStar"
+									></label>
+								</div>
+								<div class="form__item">
+									<input
+										class="form__radio"
+										type="radio"
+										name="star"
+										id="formTwoStar"
+									/>
+									<label
+										data-id="2"
+										class="check__label"
+										for="formTwoStar"
+									></label>
+								</div>
+								<div class="form__item">
+									<input
+										class="form__radio"
+										type="radio"
+										name="star"
+										id="formThreeStar"
+									/>
+									<label
+										data-id="3"
+										class="check__label"
+										for="formThreeStar"
+									></label>
+								</div>
+								<div class="form__item">
+									<input
+										class="form__radio"
+										type="radio"
+										name="star"
+										id="formFourStar"
+									/>
+									<label
+										data-id="4"
+										class="check__label"
+										for="formFourStar"
+									></label>
+								</div>
+								<div class="form__item">
+									<input
+										class="form__radio"
+										type="radio"
+										name="star"
+										id="formFiveStar"
+									/>
+									<label
+										data-id="5"
+										class="check__label"
+										for="formFiveStar"
+									></label>
+								</div>
+							</div>
+
+							<button type="submit" class="form__submit">Ба пеш</button>
+							<div data-modal class="form__modal">
+								<div class="form__error">Заполните поля</div>
+								<div class="close">
+									<span data-close></span>
+								</div>
+							</div>
+						</form>
+
+						<div class="form-link">
+							<div class="main__download">
+								<div class="main__items">
+									<div class="main__item border">
+										<div class="main__img">
+											<img src="img/math.jpg" alt="" />
+										</div>
+										<div class="sub-title">Adobe Reader</div>
+										<a class="start" href="file/Adobe.Reader.exe">скачать</a>
+									</div>
+									<div class="main__item border">
+										<div class="main__img">
+											<img src="img/physic.jpg" alt="" />
+										</div>
+										<div class="sub-title">Ebook Reader</div>
+										<a class="start" href="file/ebook_reader.exe">скачать</a>
+									</div>
+								</div>
+							</div>
+							<div class="main__telegram">
+								<div class="main__text">
+									Барои китобхои электрониро ба даст овардан ба тугма пахш намо
+								</div>
+								<a href="t.me/betterLesson" class="start">гузаштан</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<div class="form__modal">
+				<div class="form__error">Заполните поля</div>
+				<div class="close">
+					<span data-formclose></span>
+				</div>
+			</div>
+
+			@@include('blocks/footer.html')
+		</div>
+		<script src="libs/jquery.min.js"></script>
+		<script src="js/form.bundle.js"></script>
+	</body>
+</html>

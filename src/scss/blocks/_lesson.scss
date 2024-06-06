@@ -1,0 +1,246 @@
+.main__lesson {
+	padding: 15px;
+	background: #ddd;
+}
+
+.lesson__video {
+	position: relative;
+	& video {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.main__accordeon {
+}
+
+.accordeon__items {
+	position: relative;
+}
+
+.accordeon__item {
+}
+
+.accordeon__btn {
+	@extend %title;
+}
+
+.accordeon__content {
+	position: absolute;
+	padding: 0 30px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+
+	//! how add animation for display
+	transition: opacity 1s ease;
+	transition-behavior: allow-discrete;
+
+	display: none;
+	opacity: 0;
+
+	&._active {
+		position: relative;
+		display: block;
+		opacity: 1;
+
+		@starting-style {
+			opacity: 0;
+		}
+	}
+}
+
+.arrow {
+	display: block;
+	width: 100%;
+	padding: 15px;
+
+	position: relative;
+
+	border-radius: 8px;
+	background: #141024de;
+	color: #fff;
+
+	cursor: pointer;
+
+	&::after,
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		translate: 0 -50%;
+		width: 3px;
+		height: 10px;
+
+		transition: rotate 0.5s ease;
+		background: #fff;
+	}
+
+	&::after {
+		right: 15px;
+		rotate: 45deg;
+	}
+
+	&::before {
+		right: 10px;
+		rotate: -45deg;
+	}
+}
+
+._active.arrow {
+	&::after {
+		rotate: 130deg;
+	}
+
+	&::before {
+		rotate: -130deg;
+	}
+}
+
+.accordeon__img {
+	min-width: 100%;
+	margin-bottom: 20px;
+
+	& img {
+		width: 100%;
+	}
+}
+
+.accordeon__text {
+	font-size: 18px;
+	opacity: 0.9;
+	margin-bottom: 20px;
+}
+
+.accordeon__e-book {
+}
+
+.accordeon__teacher {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.accordeon__sub-title {
+	@extend %sub-title;
+	text-transform: uppercase;
+}
+
+.start {
+}
+
+.accordeon__literature {
+}
+
+.accordeon__list {
+	padding: 0 30px;
+	list-style: circle;
+}
+
+.accordeon__checkbox {
+	opacity: 0;
+}
+
+.accordeon__label {
+	display: inline-flex;
+	align-items: center;
+	font-size: 16px;
+	position: relative;
+
+	&::before {
+		content: '';
+		align-self: start;
+		flex: 0 0 24px;
+		height: 24px;
+		background: #fff;
+		border-radius: 5px;
+		margin-right: 10px;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 4px;
+		left: 4px;
+
+		width: 16px;
+		height: 16px;
+
+		background: green;
+		border-radius: 4px;
+		scale: 0;
+
+		transition: all 0.3s ease;
+	}
+}
+
+.accordeon__checkbox:checked + .accordeon__label::after {
+	scale: 1;
+}
+
+.accordeon__nav {
+	position: fixed;
+	top: 20%;
+	right: 25px;
+}
+
+.lesson__video {
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.video__link {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background: rgba(36, 43, 51, 0.8);
+		transition: background-color 0.2s ease-in;
+	}
+	&:hover::before {
+		background: rgba(36, 43, 51, 0.7);
+	}
+
+	&:hover .video__icon {
+		transform: translate(-50%, -50%) scale(1.2);
+		filter: saturate(1.5);
+	}
+}
+
+.video__icon {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	z-index: 2;
+	transform: translate(-50%, -50%);
+	transition: all 0.2s ease-in;
+}
+
+@media screen and (max-width: 959px) {
+	.video__icon {
+		width: 80px;
+		height: 80px;
+	}
+}
